@@ -74,6 +74,11 @@ public class Hero
         }
     }
 
+    public void HeroStatus()
+    {
+        Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}");
+    }
+
     public void Resting()
     {
         Console.WriteLine($"[{name}] calms down and regains some stamina.");
@@ -82,6 +87,11 @@ public class Hero
         {
             stamina = 100;
         }
+    }
+
+    public bool GetHeroAlive()
+    {
+        return isDead;
     }
     
 
