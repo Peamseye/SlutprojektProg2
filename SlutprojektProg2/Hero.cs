@@ -4,31 +4,33 @@ using System.Collections.Generic;
 
 public class Hero 
 {
-    private int health;
     //Int som håller koll på hjältens hälsa.
+    private int health;
 
-    private int stamina;
     //Int som håller koll på hjältens stamina.
+    private int stamina;
 
-    private int damage;
     //Int som håller koll på hjältens attackstyrka.
+    private int damage;
 
     //public List<string> weapons = new List<string>() {""};
 
-    public string name;
     //String som innehåller hjältens namn.
+    public string name;
 
     private Random generator;
 
-    private bool isDead;
     //Bool som innehåller information om hjälten är död eller inte.
+    private bool isDead;
 
+    //Slumpgenerator för specifikt klassen "Hero". Kollar även om boolen "isDead" är sant eller falsk, vilket används i koden för att kolla om spelaren har dött eller inte.
     public Hero()
     {
         generator = new Random();
         isDead = false;
     }
 
+    //Funktion som minskar motståndarens hp med samma mängd som hjältens attackstyrka, samt tar bort en del av hjältens stamina.
     public void Attack()
     {
         if (stamina >= 15)
@@ -38,8 +40,8 @@ public class Hero
         Console.WriteLine($"[{name}] attacks!");
         }
     }
-    //Funktion som minskar motståndarens hp med samma mängd som hjältens attackstyrka, samt tar bort en del av hjältens stamina.
     
+    //Funktion som återställer en bit av hjältens hälsa samt tar bort en del av hjältens stamina. Funktionen fungerar endast om tillräckligt med stamina finns.
     public void Heal()
     {
         if (stamina >= 10)
@@ -58,8 +60,8 @@ public class Hero
             Console.WriteLine($"[{name}] is too exhausted and cannot heal.");
         }
     }
-    //Funktion som återställer en bit av hjältens hälsa samt tar bort en del av hjältens stamina. Funktionen fungerar endast om tillräckligt med stamina finns.
 
+    //Funktion som kollar om spelaren har tillräckligt med stamina för att fortsätta. Om spelaren inte har någon stamina kvar, så ändras isDead till true och spelet tar slut.
     public void Round()
     {
         stamina+= 5;
@@ -79,10 +81,11 @@ public class Hero
         Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}");
     }
 
+    //Funktion som spelaren kan använda för att öka värdet på stamina under en runda. 
     public void Resting()
     {
         Console.WriteLine($"[{name}] calms down and regains some stamina.");
-        stamina += 20;
+        stamina += 40;
         if (stamina > 100)
         {
             stamina = 100;
