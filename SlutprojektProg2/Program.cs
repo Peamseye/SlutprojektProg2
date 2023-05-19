@@ -34,7 +34,15 @@ Console.WriteLine("Write the letter corresponding to the hero.");
 h1.name = Console.ReadLine();
 }
 
-
+if (h1.name == "a" || h1.name == "A") {
+    h1.name = "Arthur";
+}
+if (h1.name == "b" || h1.name == "B") {
+    h1.name = "Jacob";
+}
+if (h1.name == "c" || h1.name == "C") {
+    h1.name = "Henry";
+}
 
 
 Console.WriteLine($"Your hero's name is [{h1.name}].");
