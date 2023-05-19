@@ -79,7 +79,6 @@ h1.PlayerMove = Console.ReadLine();
 
 if (h1.name == "a" || h1.name == "A") {
     h1.Attack();
-    
 }
 if (h1.name == "b" || h1.name == "B") {
     h1.Heal();
@@ -87,12 +86,10 @@ if (h1.name == "b" || h1.name == "B") {
 if (h1.name == "c" || h1.name == "C") {
     h1.Rest();
 }
+
+h1.Round();
 }
 
-
-while (h1.GetHeroAlive() == true)
-{
-    Console.Clear();
-    
-}
+Console.WriteLine($"{h1.name} died!");
+Console.WriteLine("Press ENTER to quit");
 Console.ReadLine();
