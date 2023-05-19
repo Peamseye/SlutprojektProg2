@@ -17,19 +17,21 @@ Console.WriteLine("a) Arthur");
 Console.WriteLine("b) Jacob");
 Console.WriteLine("c) Henry");
 Console.WriteLine();
-Console.WriteLine("Write the letter corresponding to the hero.");
+
 
 
 //While-funktion som begränsar spelarens framsteg tills den har fyllt in ett tillåtet svar.
 while (h1.name != "a" && h1.name != "A" && h1.name != "b" && h1.name != "B" && h1.name != "c" && h1.name != "C"){
 Console.Clear();
+Console.WriteLine("WRITE THE LETTER CORRESPONDING TO THE HERO");
+Console.WriteLine("A, B or C");
+
 Console.WriteLine();
 Console.WriteLine("Choose a hero:");
 Console.WriteLine("a) Arthur");
 Console.WriteLine("b) Edward");
 Console.WriteLine("c) Henry");
 Console.WriteLine();
-Console.WriteLine("Write the letter corresponding to the hero.");
 
 h1.name = Console.ReadLine();
 }
@@ -79,12 +81,16 @@ h1.PlayerMove = Console.ReadLine();
 
 if (h1.name == "a" || h1.name == "A") {
     h1.Attack();
+    Console.ReadLine();
 }
 if (h1.name == "b" || h1.name == "B") {
     h1.Heal();
+    Console.ReadLine();
 }
 if (h1.name == "c" || h1.name == "C") {
     h1.Rest();
+    Console.ReadLine();
+    
 }
 
 h1.Round();
