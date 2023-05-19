@@ -85,7 +85,7 @@ public class Hero
 
     public void HeroStatus()
     {
-        Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}")
+        Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}");
         
     }
 
