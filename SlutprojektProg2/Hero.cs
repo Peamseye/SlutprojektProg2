@@ -69,6 +69,7 @@ public class Hero
     public void Round()
     {
         stamina+= 5;
+        health-= 20;
         if (health <= 0)
         {
             isAlive = true;
