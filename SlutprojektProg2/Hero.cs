@@ -54,7 +54,7 @@ public class Hero
         stamina -= 10;
         
         Console.WriteLine($"[{name}] is healed.");
-        health += 20;
+        health += 30;
         if (health > 100)
         {
             health = 100;
