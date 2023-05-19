@@ -6,6 +6,7 @@ public class Hero
 {
     //Int som håller koll på hjältens hälsa.
     private int health;
+    
 
     //Int som håller koll på hjältens stamina.
     private int stamina;
@@ -18,16 +19,19 @@ public class Hero
     //String som innehåller hjältens namn.
     public string name;
 
+    //String som sparar spelarens beslut under en runda.
+    public string PlayerMove;
+
     private Random generator;
 
     //Bool som innehåller information om hjälten är död eller inte.
-    private bool isDead;
+    public bool isAlive;
 
     //Slumpgenerator för specifikt klassen "Hero". Kollar även om boolen "isDead" är sant eller falsk, vilket används i koden för att kolla om spelaren har dött eller inte.
     public Hero()
     {
         generator = new Random();
-        isDead = false;
+        isAlive = false;
     }
 
     //Funktion som minskar motståndarens hp med samma mängd som hjältens attackstyrka, samt tar bort en del av hjältens stamina.
@@ -67,7 +71,7 @@ public class Hero
         stamina+= 5;
         if (health <= 0)
         {
-            isDead = true;
+            isAlive = true;
         }
 
         if (stamina < 0)
@@ -82,7 +86,7 @@ public class Hero
     }
 
     //Funktion som spelaren kan använda för att öka värdet på stamina under en runda. 
-    public void Resting()
+    public void Rest()
     {
         Console.WriteLine($"[{name}] calms down and regains some stamina.");
         stamina += 40;
@@ -94,8 +98,7 @@ public class Hero
 
     public bool GetHeroAlive()
     {
-        return isDead;
+        return isAlive;
     }
-    
 
 }
