@@ -42,16 +42,19 @@ h1.name = Console.ReadLine();
 
 if (h1.name == "a" || h1.name == "A") {
     h1.name = "ARTHUR";
+    sel1.Selection = "A";
     heroes.Add(new Arthur());
     
 }
 if (h1.name == "b" || h1.name == "B") {
     h1.name = "EDWARD";
+    sel1.Selection = "E";
     heroes.Add(new Edward());
 
 }
 if (h1.name == "c" || h1.name == "C") {
     h1.name = "HENRY";
+    sel1.Selection = "H";
     heroes.Add(new Henry());
 }
 
