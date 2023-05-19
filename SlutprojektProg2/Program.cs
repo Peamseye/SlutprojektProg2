@@ -82,15 +82,21 @@ h1.PlayerMove = Console.ReadLine();
 
 if (h1.PlayerMove == "a" || h1.PlayerMove == "A") {
     h1.Attack();
+    h1.PlayerMove = ".";
+    Console.ReadLine();
+    
     
 }
 if (h1.PlayerMove == "b" || h1.PlayerMove == "B") {
     h1.Heal();
+    h1.PlayerMove = ".";
+    Console.ReadLine();
     
 }
 if (h1.PlayerMove == "c" || h1.PlayerMove == "C") {
     h1.Rest();
-    
+    h1.PlayerMove = ".";
+    Console.ReadLine();
     
 }
 
