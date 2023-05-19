@@ -43,6 +43,7 @@ public class Hero
         
         Console.WriteLine($"[{name}] attacks!");
         }
+        
     }
     
     //Funktion som återställer en bit av hjältens hälsa samt tar bort en del av hjältens stamina. Funktionen fungerar endast om tillräckligt med stamina finns.
@@ -63,6 +64,7 @@ public class Hero
         {
             Console.WriteLine($"[{name}] is too exhausted and cannot heal.");
         }
+        
     }
 
     //Funktion som kollar om spelaren har tillräckligt med stamina för att fortsätta. Om spelaren inte har någon stamina kvar, så ändras isDead till true och spelet tar slut.
@@ -83,7 +85,8 @@ public class Hero
 
     public void HeroStatus()
     {
-        Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}");
+        Console.WriteLine($"Hero: {name} | Health: {health} | Stamina: {stamina}")
+        
     }
 
     //Funktion som spelaren kan använda för att öka värdet på stamina under en runda. 
@@ -95,6 +98,7 @@ public class Hero
         {
             stamina = 100;
         }
+        
     }
 
     public bool GetHeroAlive()

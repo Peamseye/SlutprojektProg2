@@ -63,12 +63,10 @@ Console.WriteLine();
 
 while (h1.GetHeroAlive() == false){
 
-h1.HeroStatus();
-
 //While-funktion som begränsar spelarens framsteg tills den har fyllt in ett tillåtet svar.
 while (h1.PlayerMove != "a" && h1.PlayerMove != "A" && h1.PlayerMove != "b" && h1.PlayerMove != "B" && h1.PlayerMove != "c" && h1.PlayerMove != "C"){
 Console.Clear();
-h1.Round();
+
 Console.WriteLine();
 Console.WriteLine("Choose an Action:");
 Console.WriteLine("a) ATTACK");
@@ -77,26 +75,26 @@ Console.WriteLine("c) REST");
 Console.WriteLine();
 Console.WriteLine("Write the letter corresponding to the Action.");
 
+h1.HeroStatus();
+
 h1.PlayerMove = Console.ReadLine();
 }
 
-if (h1.name == "a" || h1.name == "A") {
+if (h1.PlayerMove == "a" || h1.PlayerMove == "A") {
     h1.Attack();
     
 }
-if (h1.name == "b" || h1.name == "B") {
+if (h1.PlayerMove == "b" || h1.PlayerMove == "B") {
     h1.Heal();
     
 }
-if (h1.name == "c" || h1.name == "C") {
+if (h1.PlayerMove == "c" || h1.PlayerMove == "C") {
     h1.Rest();
     
     
 }
 
-Console.ReadLine();
-h1.PlayerMove = ".";
-
+h1.Round();
 }
 
 
