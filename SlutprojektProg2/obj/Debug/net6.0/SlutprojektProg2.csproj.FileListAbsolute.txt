@@ -1,0 +1,15 @@
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\bin\Debug\net6.0\SlutprojektProg2.exe
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\bin\Debug\net6.0\SlutprojektProg2.deps.json
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\bin\Debug\net6.0\SlutprojektProg2.runtimeconfig.json
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\bin\Debug\net6.0\SlutprojektProg2.dll
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\bin\Debug\net6.0\SlutprojektProg2.pdb
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.csproj.AssemblyReference.cache
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.AssemblyInfoInputs.cache
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.AssemblyInfo.cs
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.csproj.CoreCompileInputs.cache
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.dll
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\refint\SlutprojektProg2.dll
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.pdb
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\SlutprojektProg2.genruntimeconfig.cache
+C:\Users\aslund.alexander\null\SlutprojektProg2\SlutprojektProg2\obj\Debug\net6.0\ref\SlutprojektProg2.dll
