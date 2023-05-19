@@ -1,11 +1,15 @@
 ﻿using System;
 
+List<Hero> heroes = new();
+
 Console.WriteLine("Start");
 Console.ReadLine();
 
 Console.Clear();
 
 Hero h1 = new Hero();
+HeroSelection sel1 = new HeroSelection();
+Arthur ar1 = new Arthur();
 
 
 
@@ -38,13 +42,17 @@ h1.name = Console.ReadLine();
 
 if (h1.name == "a" || h1.name == "A") {
     h1.name = "ARTHUR";
+    heroes.Add(new Arthur());
     
 }
 if (h1.name == "b" || h1.name == "B") {
     h1.name = "EDWARD";
+    heroes.Add(new Edward());
+
 }
 if (h1.name == "c" || h1.name == "C") {
     h1.name = "HENRY";
+    heroes.Add(new Henry());
 }
 
 Console.Clear();

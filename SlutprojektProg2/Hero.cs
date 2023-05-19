@@ -5,14 +5,13 @@ using System.Collections.Generic;
 public class Hero 
 {
     //Int som håller koll på hjältens hälsa.
-    private int health = 100;
-    
+    protected int health { get; set; }
 
     //Int som håller koll på hjältens stamina.
-    private int stamina = 100;
+    protected int stamina { get; set; }
 
     //Int som håller koll på hjältens attackstyrka.
-    private int damage = 20;
+    protected int damage { get; set; }
 
     //public List<string> weapons = new List<string>() {""};
 
