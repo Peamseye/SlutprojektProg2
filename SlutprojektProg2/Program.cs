@@ -96,6 +96,7 @@ if (h1.name == "c" || h1.name == "C") {
 h1.Round();
 }
 
+
 Console.WriteLine($"{h1.name} died!");
 Console.WriteLine("Press ENTER to quit");
 Console.ReadLine();
